@@ -1,87 +1,118 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="style.css" rel="stylesheet">
-    <title>田中のポートフォリオ</title>
-  </head>
-  <body>
-    <h1>田中</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    
-    <h2>About</h2>
-    <p>
-      簡単な自己紹介やアピール。<br>
-      どんなことができる、したいのか。
-    </p>
+  <!-- ヘッダー -->
+  <header>
+    <div class="container">
+      <h1 class="logo">KANATA</h1>
 
-    <h3>Profile</h3>
-    <ul>
-      <li>名前（ハンドルネームも可）</li>
-      <li>所在地（県や市までで OK）</li>
-      <li>得意領域（Web 開発、サーバ運用など）</li>
-    </ul>
-
-    <h3>Skills</h3>
-    <table>
-      <tr>
-        <th>OS</th>
-        <td>Windows, Ubuntu など</td>
-      </tr>
-      <tr>
-        <th>Engine, Frameworks</th>
-        <td>Node.js, Express など</td>
-      </tr>
-      <tr>
-        <th>Tool, MiddleWare</th>
-        <td>Git, PostgreSQL など</td>
-      </tr>
-      <tr>
-        <th>資格・免許</th>
-        <td>情報処理技術者、LPIC など</td>
-      </tr>
-    </table>
-
-    <h3>Works</h3>
-    <p>アピールできる活動内容を書きましょう。</p>
-    <ul>
-      <li><a href="https://github.com/">GitHub</a></li>
-      <li><a href="https://qiita.com/">Qiita</a></li>
-      <li><a href="https://zenn.dev/">Zenn</a></li>
-      <li>
-        作った作品
+      <nav>
         <ul>
-          <li><a href="https://example.com/">作品 1</a></li>
-          <li><a href="https://example.com/">作品 2</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-      </li>
-    </ul>
+      </nav>
+    </div>
+  </header>
 
-    <h3>Contact</h3>
-    <p>連絡先や SNS のアカウントを書きましょう。</p>
-    <ul>
-      <li><a href="mailto:name@example.com">Mail</a></li>
-      <li><a href="https://twitter.com/n_yobikou">X(旧 Twitter)</a></li>
-      <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
-    </ul>
+  <!-- メインビジュアル -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Web Developer Portfolio</h2>
+      <p>
+        HTML / CSS / JavaScript / PHP を勉強中
+      </p>
+    </div>
+  </section>
 
-    <h3>History</h3>
-    <p>学歴、職歴、アルバイト、インターン経験など。</p>
-    <table>
-      <tr>
-        <th>2019 年</th>
-        <td><a href="https://dwango.co.jp/">株式会社ドワンゴ</a> 入社</td>
-      </tr>
-      <tr>
-        <th>2018 年</th>
-        <td>学校法人角川ドワンゴ学園 <a href="https://nnn.ed.jp/">N高等学校</a> 卒業</td>
-      </tr>
-      <tr>
-        <th>20XX 年</th>
-        <td>表彰、受賞歴、メディア掲載記事などあれば</td>
-      </tr>
-    </table>
+  <!-- 自己紹介 -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About</h2>
 
-  </body>
+      <p>
+        大学生として情報技術を学びながら、
+        Web制作やセキュリティについて勉強しています。
+      </p>
+    </div>
+  </section>
+
+  <!-- スキル -->
+  <section id="skills" class="section gray">
+    <div class="container">
+      <h2>Skills</h2>
+
+      <div class="skills-list">
+        <div class="card">
+          <h3>HTML</h3>
+          <p>Webページの構造作成</p>
+        </div>
+
+        <div class="card">
+          <h3>CSS</h3>
+          <p>デザイン・レイアウト調整</p>
+        </div>
+
+        <div class="card">
+          <h3>JavaScript</h3>
+          <p>動きのあるサイト制作</p>
+        </div>
+
+        <div class="card">
+          <h3>PHP</h3>
+          <p>簡単なWebアプリ制作</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 制作物 -->
+  <section id="works" class="section">
+    <div class="container">
+      <h2>Works</h2>
+
+      <div class="works-list">
+
+        <div class="work-card">
+          <h3>掲示板アプリ</h3>
+          <p>
+            PHPとMySQLを使って制作した簡易BBS
+          </p>
+        </div>
+
+        <div class="work-card">
+          <h3>Todoアプリ</h3>
+          <p>
+            JavaScriptで制作したタスク管理アプリ
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- お問い合わせ -->
+  <section id="contact" class="section gray">
+    <div class="container">
+      <h2>Contact</h2>
+
+      <p>Email: example@example.com</p>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer>
+    <p>© 2026 KANATA Portfolio</p>
+  </footer>
+
+</body>
 </html>
