@@ -1,93 +1,132 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>田中のポートフォリオ</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- ヘッダー -->
+  <!-- Header -->
   <header>
+
     <div class="container">
-      <h1 class="logo">田中</h1>
+
+      <h1 class="logo">
+        田中
+      </h1>
 
       <nav>
         <ul>
           <li><a href="#about">About</a></li>
+          <li><a href="#profile">Profile</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#works">Works</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+
     </div>
+
   </header>
 
-  <!-- メインビジュアル -->
+  <!-- Hero -->
+
   <section class="hero">
-    <div class="hero-text">
-      <h2>田中のポートフォリオ</h2>
-      <p>
+
+    <div class="hero-content">
+
+      <p class="small-title">
+        PORTFOLIO
+      </p>
+
+      <h2>
+        田中のポートフォリオ
+      </h2>
+
+      <p class="hero-text">
         HTML / CSS / JavaScript / Python などを勉強中
       </p>
+
+      <a href="#works" class="btn">
+        VIEW WORKS
+      </a>
+
     </div>
+
   </section>
 
-  <!-- 自己紹介 -->
-  <section id="about" class="section">
-    <div class="container">
-      <h2>About</h2>
+  <!-- About -->
 
-      <p>
+  <section id="about" class="section">
+
+    <div class="container">
+
+      <h2 class="section-title">
+        About
+      </h2>
+
+      <p class="about-text">
         大学生として情報技術を学びながら、
         Web制作やセキュリティなどについて勉強しています。
       </p>
+
     </div>
+
   </section>
 
   <!-- Profile -->
 
-<section id="profile" class="section">
+  <section id="profile" class="section dark-section">
 
-  <div class="container">
+    <div class="container">
 
-    <h2 class="section-title">
-      Profile
-    </h2>
+      <h2 class="section-title">
+        Profile
+      </h2>
 
-    <div class="profile-box">
+      <div class="profile-box">
 
-      <div class="profile-image">
-      </div>
+        <div class="profile-image">
 
-      <div class="profile-content">
+          <img
+            src="https://via.placeholder.com/300"
+            alt="profile"
+          >
 
-        
+        </div>
 
-        <p>
-          
-        </p>
+        <div class="profile-content">
 
-        <ul class="profile-list">
-          <li><span>Name :</span> 田中</li>
-          <li><span>Location :</span> Tokyo</li>
-        </ul>
+          <ul class="profile-list">
+            <li><span>Name :</span> 田中</li>
+            <li><span>Location :</span> Tokyo</li>
+            <li><span>Skill :</span> HTML / CSS / JavaScript</li>
+          </ul>
+
+        </div>
 
       </div>
 
     </div>
 
-  </div>
+  </section>
 
-</section>
+  <!-- Skills -->
 
-  <!-- スキル -->
-  <section id="skills" class="section gray">
+  <section id="skills" class="section">
+
     <div class="container">
-      <h2>Skills</h2>
 
-      <div class="skills-list">
+      <h2 class="section-title">
+        Skills
+      </h2>
+
+      <div class="grid">
+
         <div class="card">
           <h3>HTML</h3>
           <p>Webページの構造作成</p>
@@ -105,49 +144,83 @@
 
         <div class="card">
           <h3>Python</h3>
-          <p>簡単なWebアプリ制作</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 制作物 -->
-  <section id="works" class="section">
-    <div class="container">
-      <h2>Works</h2>
-
-      <div class="works-list">
-
-        <div class="work-card">
-          <h3></h3>
-          <p>
-            
-          </p>
-        </div>
-
-        <div class="work-card">
-          <h3></h3>
-          <p>
-            
-          </p>
+          <p>プログラミング学習</p>
         </div>
 
       </div>
+
     </div>
+
   </section>
 
-  <!-- お問い合わせ -->
-  <section id="contact" class="section gray">
+  <!-- Works -->
+
+  <section id="works" class="section dark-section">
+
     <div class="container">
-      <h2>Contact</h2>
 
-      <p>Email: example@example.com</p>
+      <h2 class="section-title">
+        Works
+      </h2>
+
+      <div class="grid">
+
+        <div class="work-card">
+
+          <h3>
+            ポートフォリオサイト
+          </h3>
+
+          <p>
+            HTMLとCSSを使って制作したサイト
+          </p>
+
+        </div>
+
+        <div class="work-card">
+
+          <h3>
+            Todoアプリ
+          </h3>
+
+          <p>
+            JavaScriptで制作したタスク管理アプリ
+          </p>
+
+        </div>
+
+      </div>
+
     </div>
+
   </section>
 
-  <!-- フッター -->
+  <!-- Contact -->
+
+  <section id="contact" class="section">
+
+    <div class="container center">
+
+      <h2 class="section-title">
+        Contact
+      </h2>
+
+      <p>
+        example@example.com
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+
   <footer>
-    <p>© 2026 TANAKA Portfolio</p>
+
+    <p>
+      © 2026 TANAKA Portfolio
+    </p>
+
   </footer>
 
 </body>
