@@ -70,6 +70,8 @@ nav a:hover {
 .hero h2 {
   font-size: 48px;
   margin-bottom: 10px;
+  white-space: nowrap;
+}
 }
 
 .hero p {
